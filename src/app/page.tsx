@@ -94,6 +94,9 @@ export default function Home() {
                 "Node.js",
                 "MySQL",
                 "Git/GitHub",
+                "Wireshark/tshark",
+                "TCP/IP",
+                "pandas",
               ].map((s) => (
                 <span
                   key={s}

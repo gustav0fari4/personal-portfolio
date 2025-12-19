@@ -1,8 +1,8 @@
 export function Highlights() {
   const items = [
     "Optimisation project (Python): SA/GA/PSO + constraint checks + unit tests.",
+    "Network Traffic Analyzer (Python + tshark/Wireshark): PCAPNG field extraction + JSON/CSV reporting (top talkers/ports, protocol breakdown, throughput).",
     "Java/OOP project: menu-driven console game, input validation, randomised outcomes, credit system.",
-    "Full‑stack (in progress): authentication, CRUD APIs and MySQL integration.",
     "Leadership: process improvement and team coordination in high‑pressure environments.",
   ];
 
