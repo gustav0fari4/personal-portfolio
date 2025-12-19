@@ -22,16 +22,58 @@ export default function MotoGPProjectPage() {
             to reduce logistics cost while respecting scheduling constraints.
           </p>
 
-          <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-            <div className="relative h-56 w-full">
-              <Image
-                src="/projects/motogplogo.png"
-                alt="MotoGP project cover"
-                fill
-                className="object-cover"
-                priority
-              />
+          <div className="mt-8 space-y-8 text-white/80">
+          <section>
+            <h2 className="text-xl font-semibold text-white">Screenshots</h2>
+  
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+                <div className="relative h-80 w-full">
+                  <Image
+                    src="/projects/screenshots/results.png"
+                    alt="Optimisation results output"
+                    fill
+                    className="object-contain bg-black"
+                  />
+                </div>
+              </div>
+
+              <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+                <div className="relative h-80 w-full">
+                  <Image
+                    src="/projects/screenshots/constraints.png"
+                    alt="Constraint checks output"
+                    fill
+                    className="object-contain bg-black"
+                  />
+                </div>
+              </div>
             </div>
+          </section>
+          </div>
+
+          <div className="mt-8 space-y-8 text-white/80">
+          <section>
+            <h2 className="text-xl font-semibold text-white">Results</h2>
+            <ul className="mt-3 list-disc space-y-2 pl-5">
+              <li>
+                Baseline distance (original calendar): <strong>146,768.18 km</strong>
+              </li>
+              <li>
+                Best overall strategy: <strong>Simulated Annealing</strong>
+              </li>
+              <li>
+                Best distance (SA, no penalties): <strong>124,200.20 km</strong>
+              </li> 
+              <li>
+                Improvement vs baseline: <strong>22,567.98 km</strong> (~<strong>15.38%</strong>)
+              </li>
+              <li>
+                Constraint checks: <strong>temperature OK</strong>, <strong>summer shutdown OK</strong>,{" "}
+                <strong>no duplicates</strong>, <strong>Valencia fixed</strong>, <strong>no triple headers</strong>
+              </li>
+            </ul>
+          </section>
           </div>
 
           <div className="mt-8 space-y-8 text-white/80">
@@ -47,34 +89,13 @@ export default function MotoGPProjectPage() {
             </section>
 
             <section>
-  <h2 className="text-xl font-semibold text-white">Results (example)</h2>
-  <ul className="mt-3 list-disc space-y-2 pl-5">
-    <li>
-      Baseline distance (original calendar): <strong>TODO km</strong>
-    </li>
-    <li>
-      Best optimised distance: <strong>TODO km</strong>
-    </li>
-    <li>
-      Improvement: <strong>TODO km</strong> (TODO%)
-    </li>
-    <li>
-      Constraints satisfied: temperature range, summer shutdown, no triple headers, fixed finale
-    </li>
-  </ul>
-  <p className="mt-3 text-sm text-white/60">
-    paste the numbers printed by your Python script output here.
-  </p>
-</section>
-
-<section>
-  <h2 className="text-xl font-semibold text-white">What I learned</h2>
-  <ul className="mt-3 list-disc space-y-2 pl-5">
-    <li>How to model a real-world logistics problem with constraints and penalties</li>
-    <li>Trade-offs between SA/GA/PSO approaches and parameter tuning</li>
-    <li>Building reliable code with unit tests and reproducible environments</li>
-  </ul>
-</section>
+              <h2 className="text-xl font-semibold text-white">What I learned</h2>
+              <ul className="mt-3 list-disc space-y-2 pl-5">
+                <li>How to model a real-world logistics problem with constraints and penalties</li>
+                <li>Trade-offs between SA/GA/PSO approaches and parameter tuning</li>
+                <li>Building reliable code with unit tests and reproducible environments</li>
+              </ul>
+            </section>
 
             <section>
               <h2 className="text-xl font-semibold text-white">Links</h2>
