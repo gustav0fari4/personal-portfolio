@@ -97,6 +97,10 @@ export default function Home() {
                 "Wireshark/tshark",
                 "TCP/IP",
                 "pandas",
+                "REST APIs",
+                "Authentication",
+                "RBAC",
+                "CRUD"
               ].map((s) => (
                 <span
                   key={s}

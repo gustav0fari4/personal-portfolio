@@ -40,4 +40,14 @@ export const projects: Project[] = [
     image: "/projects/network-traffic.png",
     featured: false,
   },
+  {
+    title: "Full Stack Web Dev – Inventory, Rental & Ticketing",
+    description:
+      "Collection of full-stack apps: Cinema & Inventory Manager, Appliance Tracker (CRUD), and Property Letting Platform with role-based dashboards.",
+    tech: ["Next.js", "MySQL", "CRUD", "RBAC", "API Routes"],
+    githubUrl: "https://github.com/gustav0fari4/Full-Stack-Web-Dev-Inventory-Rental-Ticketing-",
+    slug: "full-stack-web-dev",
+    image: "/projects/full-stack-web-dev.png",
+    featured: false,
+  }
 ];
