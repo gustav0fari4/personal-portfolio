@@ -18,9 +18,6 @@ export default function FruitMachinePage() {
       <Container>
         <div className="py-10">
           <div className="flex items-center justify-between gap-4">
-            <Link href="/projects" className="text-sm text-white/70 underline">
-              ← Back to Projects
-            </Link>
   
             <Link href="/" className="text-sm text-white/70 underline">
               Home
@@ -33,20 +30,20 @@ export default function FruitMachinePage() {
 
           <p className="mt-3 max-w-3xl text-white/80">
             Console-based slot machine game built in Java. Implements a menu-driven
-            flow, difficulty levels, credit management, <code>Random</code>.
+            flow, difficulty levels, credit management, and randomized outcomes using <code>Random</code>.
           </p>
 
           <section className="mt-6">
             <h2 className="text-xl font-semibold text-white">Screenshot</h2>
 
-            <div className="mt-4 overflow-hidden rounded 2x1 border border-white/10 bg-white/5">
+            <div className="mt-4 overflow-hidden rounded-2x1 border border-white/10 bg-white/5">
               <div className="relative h-[520px] w-full">
                 <Image
-                src="/projects/screenshots/console.png"
-                alt="Fruit Machine console output"
-                fill
-                className="object-contain bg-black"
-                priority
+                  src="/projects/screenshots/console.png"
+                  alt="Fruit Machine console output"
+                  fill
+                  className="object-contain bg-black"
+                  priority
                 />
               </div>
 
@@ -57,7 +54,6 @@ export default function FruitMachinePage() {
           </section>
 
           <div className="mt-8 space-y-8 text-white/80">
-
             <section>
               <h2 className="text-xl font-semibold text-white">Gameplay rules</h2>
               <ul className="mt-3 list-disc space-y-2 pl-5">
@@ -72,8 +68,8 @@ export default function FruitMachinePage() {
             <section>
               <h2 className="text-xl font-semibold text-white">Implementation notes</h2>
               <ul className="mt-3 list-disc space-y-2 pl-5">
-                <li>Separeted responsibilities into small methods (menu, input validation, spin, payouts).</li>
-                <li>Used robust input parsin with retry loop to avoid crashes from invalid input.</li>
+                <li>Separated responsibilities into small methods (menu, input validation, spin, payouts).</li>
+                <li>Used robust input parsing with retry loop to avoid crashes from invalid input.</li>
                 <li>Implemented difficulty scaling for both cost and winnings</li>
               </ul>
             </section>
@@ -124,7 +120,7 @@ Remaining credits 80`}
               <ul className="mt-3 list-disc space-y-2 pl-5">
                 <li>Input validation + retry loop (try/catch, parsing)</li>
                 <li>State management via credits variable</li>
-                <li>Randomness.probability logic</li>
+                <li>Randomness/probability logic</li>
               </ul>
             </section>
 

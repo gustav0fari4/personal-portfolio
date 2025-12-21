@@ -11,9 +11,6 @@ export default function MotoGPProjectPage() {
       <Container>
         <div className="py-10">
           <div className="flex items-center justify-between gap-4">
-            <Link href="/projects" className="text-sm text-white/70 underline">
-              ← Back to Projects
-            </Link>
 
             <Link href="/" className="text-sm text-white/70 underline">
               Home
@@ -44,6 +41,10 @@ export default function MotoGPProjectPage() {
                       className="object-contain bg-black"
                     />
                   </div>
+
+                  <p className="px-5 pb-4 text-sm text-white/60">
+                    Best overall strategy (SA)                  
+                  </p>
                 </div>
 
                 <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
@@ -55,6 +56,9 @@ export default function MotoGPProjectPage() {
                       className="object-contain bg-black"
                     />
                   </div>
+                  <p className="px-5 pb-4 text-sm text-white/60">
+                    Constraint checks + baseline vs PSO improvement                  
+                  </p>
                 </div>
               </div>
             </section>
@@ -82,9 +86,7 @@ export default function MotoGPProjectPage() {
                 </li>
               </ul>
             </section>
-          </div>
 
-          <div className="mt-8 space-y-8 text-white/80">
             <section>
               <h2 className="text-xl font-semibold text-white">Key features</h2>
               <ul className="mt-3 list-disc space-y-2 pl-5">
