@@ -7,11 +7,19 @@ export default function MotoGPProjectPage() {
   return (
     <div className="min-h-screen bg-[#0b0f19] text-white">
       <Navbar />
+
       <Container>
         <div className="py-10">
-          <Link href="/projects" className="text-sm text-white/70 underline">
-            ← Back to Projects
-          </Link>
+          <div className="flex items-center justify-between gap-4">
+            <Link href="/projects" className="text-sm text-white/70 underline">
+              ← Back to Projects
+            </Link>
+
+            <Link href="/" className="text-sm text-white/70 underline">
+              Home
+            </Link>
+          </div>
+
           <h1 className="mt-4 text-3xl font-semibold tracking-tight">
             MotoGP Sustainability Calendar Optimisation
           </h1>
@@ -23,57 +31,57 @@ export default function MotoGPProjectPage() {
           </p>
 
           <div className="mt-8 space-y-8 text-white/80">
-          <section>
-            <h2 className="text-xl font-semibold text-white">Screenshots</h2>
+            <section>
+              <h2 className="text-xl font-semibold text-white">Screenshots</h2>
   
-            <div className="mt-4 grid gap-4 md:grid-cols-2">
-              <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-                <div className="relative h-80 w-full">
-                  <Image
-                    src="/projects/screenshots/results.png"
-                    alt="Optimisation results output"
-                    fill
-                    className="object-contain bg-black"
-                  />
+              <div className="mt-4 grid gap-4 md:grid-cols-2">
+                <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+                  <div className="relative h-80 w-full">
+                    <Image
+                      src="/projects/screenshots/results.png"
+                      alt="Optimisation results output"
+                      fill
+                      className="object-contain bg-black"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-                <div className="relative h-80 w-full">
-                  <Image
-                    src="/projects/screenshots/constraints.png"
-                    alt="Constraint checks output"
-                    fill
-                    className="object-contain bg-black"
-                  />
+                <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+                  <div className="relative h-80 w-full">
+                    <Image
+                      src="/projects/screenshots/constraints.png"
+                      alt="Constraint checks output"
+                      fill
+                      className="object-contain bg-black"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
           </div>
 
           <div className="mt-8 space-y-8 text-white/80">
-          <section>
-            <h2 className="text-xl font-semibold text-white">Results</h2>
-            <ul className="mt-3 list-disc space-y-2 pl-5">
-              <li>
-                Baseline distance (original calendar): <strong>146,768.18 km</strong>
-              </li>
-              <li>
-                Best overall strategy: <strong>Simulated Annealing</strong>
-              </li>
-              <li>
-                Best distance (SA, no penalties): <strong>124,200.20 km</strong>
-              </li> 
-              <li>
-                Improvement vs baseline: <strong>22,567.98 km</strong> (~<strong>15.38%</strong>)
-              </li>
-              <li>
-                Constraint checks: <strong>temperature OK</strong>, <strong>summer shutdown OK</strong>,{" "}
-                <strong>no duplicates</strong>, <strong>Valencia fixed</strong>, <strong>no triple headers</strong>
-              </li>
-            </ul>
-          </section>
+            <section>
+              <h2 className="text-xl font-semibold text-white">Results</h2>
+              <ul className="mt-3 list-disc space-y-2 pl-5">
+                <li>
+                  Baseline distance (original calendar): <strong>146,768.18 km</strong>
+                </li>
+                <li>
+                  Best overall strategy: <strong>Simulated Annealing</strong>
+                </li>
+                <li>
+                  Best distance (SA, no penalties): <strong>124,200.20 km</strong>
+                </li> 
+                <li>
+                  Improvement vs baseline: <strong>22,567.98 km</strong> (~<strong>15.38%</strong>)
+                </li>
+                <li>
+                  Constraint checks: <strong>temperature OK</strong>, <strong>summer shutdown OK</strong>,{" "}
+                  <strong>no duplicates</strong>, <strong>Valencia fixed</strong>, <strong>no triple headers</strong>
+                </li>
+              </ul>
+            </section>
           </div>
 
           <div className="mt-8 space-y-8 text-white/80">
@@ -98,17 +106,15 @@ export default function MotoGPProjectPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-white">Links</h2>
-              <p className="mt-3">
-                <a
-                  className="underline"
-                  href="https://github.com/gustav0fari4/motogp-sustainability-calendar"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-black"
+                  href="https://github.com/gustav0fari4/motogp-sustainability-calendar" target="_blank" rel="noreferrer noopener">
                   GitHub repository
                 </a>
-              </p>
+                <Link className="rounded-xl border border-white/15 px-4 py-2 text-sm" href="/projects">
+                  Back to Projects
+                </Link>
+              </div>
             </section>
             <Link href="/" className="inline-block rounded-xl border border-white/15 px-4 py-2 text-sm">
               ← Back to Home
