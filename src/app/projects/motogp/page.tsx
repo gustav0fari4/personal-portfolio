@@ -111,7 +111,7 @@ export default function MotoGPProjectPage() {
               <div className="mt-4 flex flex-wrap gap-3">
                 <a className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-black"
                   href="https://github.com/gustav0fari4/motogp-sustainability-calendar" target="_blank" rel="noreferrer noopener">
-                  GitHub repository
+                  View on GitHub
                 </a>
                 <Link className="rounded-xl border border-white/15 px-4 py-2 text-sm" href="/projects">
                   Back to Projects

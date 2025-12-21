@@ -70,7 +70,7 @@ export default function FruitMachinePage() {
               <ul className="mt-3 list-disc space-y-2 pl-5">
                 <li>Separated responsibilities into small methods (menu, input validation, spin, payouts).</li>
                 <li>Used robust input parsing with retry loop to avoid crashes from invalid input.</li>
-                <li>Implemented difficulty scaling for both cost and winnings</li>
+                <li>Implemented difficulty scaling for both cost and winnings.</li>
               </ul>
             </section>
 
