@@ -17,12 +17,6 @@ export default function NetworkTrafficAnalyzerPage() {
 
       <Container>
         <div className="py-10">
-          <div className="flex items-center justify-between gap-4">
-
-            <Link href="/" className="text-sm text-white/70 underline">
-              Home
-            </Link>
-          </div>
 
           <h1 className="mt-4 text-3xl font-semibold tracking-tight">
             Network Traffic Analyzer (Python)
@@ -35,15 +29,23 @@ export default function NetworkTrafficAnalyzerPage() {
           </p>
 
           <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-            <div className="relative h-80 w-full">
-              <Image
-                src="/projects/screenshots/capture.png"
-                alt="Network traffic analyzer preview"
-                fill
-                className="object-contain bg-black"
-                priority
-              />
-            </div>
+            <a
+              href="/projects/screenshots/capture.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block cursor-zoom-in"
+              title="Open full size"
+            >
+              <div className="relative h-80 w-full">
+                <Image
+                  src="/projects/screenshots/capture.png"
+                  alt="Network traffic analyzer preview"
+                  fill
+                  className="object-contain bg-black"
+                  priority
+                />
+              </div>
+            </a>
             <p className="px-5 pb-4 text-sm text-white/60">
               Snapshot of a sample run (capture → extract → analyze)
             </p>
@@ -87,28 +89,44 @@ export default function NetworkTrafficAnalyzerPage() {
               <h2 className="text-xl font-semibold text-white">Screenshots</h2>
               <div className="mt-4 grid gap-4 md:grid-cols-2">
                 <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-                  <div className="relative h-80 w-full">
-                    <Image
-                      src="/projects/screenshots/report.png"
-                      alt="Analyzer quick summary output"
-                      fill
-                      className="object-contain bg-black"
-                    />
-                  </div>
+                  <a
+                    href="/projects/screenshots/report.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block cursor-zoom-in"
+                    title="Open full size"
+                  >
+                    <div className="relative h-80 w-full">
+                      <Image
+                        src="/projects/screenshots/report.png"
+                        alt="Analyzer quick summary output"
+                        fill
+                        className="object-contain bg-black"
+                      />
+                    </div>
+                  </a>
                   <p className="px-5 pb-4 text-sm text-white/60">
                     Python output summary + generated report files.
                   </p>
                 </div>
 
                 <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-                  <div className="relative h-80 w-full">
-                    <Image
-                      src="/projects/screenshots/report.csv.png"
-                      alt="tshark extraction output"
-                      fill
-                      className="object-contain bg-black"
-                    />
-                  </div>
+                  <a
+                    href="/projects/screenshots/report.csv.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block cursor-zoom-in"
+                    title="Open full size"
+                  >
+                    <div className="relative h-80 w-full">
+                      <Image
+                        src="/projects/screenshots/report.csv.png"
+                        alt="tshark extraction output"
+                        fill
+                        className="object-contain bg-black"
+                      />
+                    </div>
+                  </a>
                   <p className="px-5 pb-4 text-sm text-white/60">
                     Field extraction step (tshark → TSV).
                   </p>

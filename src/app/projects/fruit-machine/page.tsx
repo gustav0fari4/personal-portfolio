@@ -17,12 +17,6 @@ export default function FruitMachinePage() {
 
       <Container>
         <div className="py-10">
-          <div className="flex items-center justify-between gap-4">
-  
-            <Link href="/" className="text-sm text-white/70 underline">
-              Home
-            </Link>
-          </div>
 
           <h1 className="mt-4 text-3xl font-semibold tracking-tight">
             Fruit Machine Game (Java)
@@ -37,16 +31,23 @@ export default function FruitMachinePage() {
             <h2 className="text-xl font-semibold text-white">Screenshot</h2>
 
             <div className="mt-4 overflow-hidden rounded-2x1 border border-white/10 bg-white/5">
-              <div className="relative h-[520px] w-full">
-                <Image
-                  src="/projects/screenshots/console.png"
-                  alt="Fruit Machine console output"
-                  fill
-                  className="object-contain bg-black"
-                  priority
-                />
-              </div>
-
+              <a
+                href="/projects/screenshots/console.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block cursor-zoom-in"
+                title="Open full size"
+              >
+                <div className="relative h-[520px] w-full">
+                  <Image
+                    src="/projects/screenshots/console.png"
+                    alt="Fruit Machine console output"
+                    fill
+                    className="object-contain bg-black"
+                    priority
+                  />
+                </div>
+              </a>
               <p className="px-5 pb-4 text-sm text-white/60">
                 Example gameplay: menu → difficulty selection → spin result → credits update.
               </p>

@@ -10,12 +10,6 @@ export default function MotoGPProjectPage() {
 
       <Container>
         <div className="py-10">
-          <div className="flex items-center justify-between gap-4">
-
-            <Link href="/" className="text-sm text-white/70 underline">
-              Home
-            </Link>
-          </div>
 
           <h1 className="mt-4 text-3xl font-semibold tracking-tight">
             MotoGP Sustainability Calendar Optimisation
@@ -33,29 +27,44 @@ export default function MotoGPProjectPage() {
   
               <div className="mt-4 grid gap-4 md:grid-cols-2">
                 <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-                  <div className="relative h-80 w-full">
-                    <Image
-                      src="/projects/screenshots/results.png"
-                      alt="Optimisation results output"
-                      fill
-                      className="object-contain bg-black"
-                    />
-                  </div>
-
+                  <a
+                    href="/projects/screenshots/results.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block cursor-zoom-in"
+                    title="Open full size"
+                  >
+                    <div className="relative h-80 w-full">
+                      <Image
+                        src="/projects/screenshots/results.png"
+                        alt="Optimisation results output"
+                        fill
+                        className="object-contain bg-black"
+                      />
+                    </div>
+                  </a>
                   <p className="px-5 pb-4 text-sm text-white/60">
                     Best overall strategy (SA)                  
                   </p>
                 </div>
 
                 <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-                  <div className="relative h-80 w-full">
-                    <Image
-                      src="/projects/screenshots/constraints.png"
-                      alt="Constraint checks output"
-                      fill
-                      className="object-contain bg-black"
-                    />
-                  </div>
+                  <a
+                    href="/projects/screenshots/constraints.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block cursor-zoom-in"
+                    title="Open full size"
+                  >
+                    <div className="relative h-80 w-full">
+                      <Image
+                        src="/projects/screenshots/constraints.png"
+                        alt="Constraint checks output"
+                        fill
+                        className="object-contain bg-black"
+                      />
+                    </div>
+                  </a>
                   <p className="px-5 pb-4 text-sm text-white/60">
                     Constraint checks + baseline vs PSO improvement                  
                   </p>
